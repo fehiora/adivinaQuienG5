@@ -6,13 +6,13 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #456990;
+    background-color: #038080;
 }
 
 
 .header{
-    height: 90px;
-    background-color: #F45B69;
+    height: 50px;
+    background-color: #7E1F86;
     border-bottom: solid #114B5F ;
 }
 .main{
@@ -27,7 +27,7 @@ h1{
 }
 
 .contenedor{
-    margin: 0 10%;
+    margin: 0 30%;
     padding: 2%;
     background-color: #E4FDE1;
     border-radius: 50px;
@@ -55,7 +55,7 @@ h1{
 .button{
     margin: 20px 45% 10px 45%;
     padding: 20px;
-    background-color: #F45B69;
+    background-color: #038080;
     color:  #E4FDE1;
     border-radius: 20px;
     box-shadow: 0 0 10px #114B5F;
@@ -67,7 +67,7 @@ h1{
 
 
 .button:hover{
-    background-color: #456990;
+    background-color: #7E1F86;
     color:  #E4FDE1;
 }
 
