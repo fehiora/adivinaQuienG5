@@ -16,66 +16,92 @@ body {
     text-align: center;
 }
 
-.main{
+.main {
     padding: 0 4%;
     background-color: #038080;
     box-shadow: 0 0 150px #7E1F86;
 }
 
-.instrucciones{
+.instrucciones {
     background-color: #7E1F86;
     color: white;
     border-radius: 10px;
     padding-top: 2%;
 }
 
-.instrucciones > h4{
+.instrucciones>h4 {
     margin-bottom: 50%;
 }
 
-.selector{
+.selector {
     padding-top: 10%;
-    background-color:#7E1F86;
-    color: #E4FDE1 ;
+    background-color: #7E1F86;
+    color: #E4FDE1;
+    border-radius: 10px;
 }
 
-.btnSelector{
+.btnSelector {
     margin-top: 20%;
     padding: 3%;
     border-radius: 20px;
-    background-color:#114B5F;
+    background-color: #114B5F;
     color: white
 }
 
-.btnSelector:hover{
+.btnSelector:hover {
     margin-top: 20%;
     padding: 3%;
     border-radius: 20px;
-    background-color:white;
-    color:#114B5F
+    background-color: white;
+    color: #114B5F;
 }
 
 .btnAside {
-    background-color: #E4FDE1;
-    color: #114B5F;
+    background-color: #114B5F;
+    color: white;
     border-radius: 10px;
     padding: 5px;
-    border: none;
+
 }
 
 .btnAside>a {
-    color: #114B5F;
+    color: white;
     text-decoration: none;
 }
 
 .btnAside:hover {
-    background-color: #114B5F;
-    color: #E4FDE1;
+    background-color: #092933;
+    color: white;
 }
 
 .btnAside>a:hover {
+    background-color: #092933;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btnAside1 {
+    width: 7%;
     background-color: #114B5F;
-    color: #E4FDE1;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btnAside1>a {
+    color: white;
+    text-decoration: none;
+}
+
+.btnAside1:hover {
+    background-color: #092933;
+    text-decoration: none;
+}
+
+.btnAside1>a:hover {
+    color: white;
+    background-color: #092933;
     border-radius: 20px;
     text-decoration: none;
 }
@@ -112,6 +138,12 @@ body {
     font-weight: bold;
     text-align: center;
     vertical-align: top;
+    cursor: pointer;
+
+}
+
+.tg .tg-amwm:hover {
+    transform: scale(1.1);
 }
 
 .salida {

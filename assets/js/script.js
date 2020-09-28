@@ -1,11 +1,11 @@
 const bienvenidaUsuario = document.getElementById('bienvenida_usuario')
-if (localStorage.getItem('sesion')){
-    const bienvenidaStorage = JSON.parse(localStorage.getItem('sesion'))
-    bienvenidaUsuario.innerText = ('  ' + bienvenidaStorage.nombre)
-}else{
-    setTimeout(() =>{
-        window.location = '../pages/login.html'
-    },300)
+if (localStorage.getItem('sesion')) {
+  const bienvenidaStorage = JSON.parse(localStorage.getItem('sesion'))
+  bienvenidaUsuario.innerText = ('  ' + bienvenidaStorage.nombre)
+} else {
+  setTimeout(() => {
+    window.location = '../pages/login.html'
+  }, 300)
 }
 
 
@@ -13,153 +13,153 @@ if (localStorage.getItem('sesion')){
 
 
 function esHombre() {
-  document.getElementById("p2").style.color = "red" ;
-  document.getElementById("yisel").src="../img/2x.png";
+  document.getElementById("p2").style.color = "red";
+  document.getElementById("yisel").src = "../img/2x.png";
   document.getElementById("p3").style.color = "red";
-  document.getElementById("andrea").src="../img/3x.png";
+  document.getElementById("andrea").src = "../img/3x.png";
   document.getElementById("p5").style.color = "red";
-  document.getElementById("catalina").src="../img/5x.png";
+  document.getElementById("catalina").src = "../img/5x.png";
   document.getElementById("p6").style.color = "red";
-  document.getElementById("yurani").src="../img/6x.png";
+  document.getElementById("yurani").src = "../img/6x.png";
   document.getElementById("p7").style.color = "red";
-  document.getElementById("marinella").src="../img/7x.png";
+  document.getElementById("marinella").src = "../img/7x.png";
   document.getElementById("p8").style.color = "red";
-  document.getElementById("alejandra").src="../img/8x.png";
+  document.getElementById("alejandra").src = "../img/8x.png";
   document.getElementById("p10").style.color = "red";
-  document.getElementById("fernanda").src="../img/10x.png";
+  document.getElementById("fernanda").src = "../img/10x.png";
 }
 
 function esMujer() {
   document.getElementById("p1").style.color = "red";
-  document.getElementById("carlos").src="../img/1x.png";
+  document.getElementById("carlos").src = "../img/1x.png";
   document.getElementById("p4").style.color = "red";
-  document.getElementById("ferney").src="../img/4x.png";
+  document.getElementById("ferney").src = "../img/4x.png";
   document.getElementById("p9").style.color = "red";
-  document.getElementById("daniel").src="../img/9x.png"
+  document.getElementById("daniel").src = "../img/9x.png"
   document.getElementById("p11").style.color = "red";
-  document.getElementById("camilo").src="../img/11x.png"
+  document.getElementById("camilo").src = "../img/11x.png"
   document.getElementById("p12").style.color = "red";
-  document.getElementById("werner").src="../img/12x.png"
+  document.getElementById("werner").src = "../img/12x.png"
 }
 
 function tieneGafas() {
   document.getElementById("p2").style.color = "red";
-  document.getElementById("yisel").src="../img/2x.png"
+  document.getElementById("yisel").src = "../img/2x.png"
   document.getElementById("p7").style.color = "red";
-  document.getElementById("marinella").src="../img/7x.png"
+  document.getElementById("marinella").src = "../img/7x.png"
   document.getElementById("p8").style.color = "red";
-  document.getElementById("alejandra").src="../img/8x.png"
+  document.getElementById("alejandra").src = "../img/8x.png"
   document.getElementById("p9").style.color = "red";
-  document.getElementById("daniel").src="../img/9x.png"
+  document.getElementById("daniel").src = "../img/9x.png"
   document.getElementById("p10").style.color = "red";
-  document.getElementById("fernanda").src="../img/10x.png"
+  document.getElementById("fernanda").src = "../img/10x.png"
   document.getElementById("p12").style.color = "red";
-  document.getElementById("werner").src="../img/12x.png"
+  document.getElementById("werner").src = "../img/12x.png"
 }
 
 function notieneGafas() {
   document.getElementById("p1").style.color = "red";
-  document.getElementById("carlos").src="../img/1x.png"
+  document.getElementById("carlos").src = "../img/1x.png"
   document.getElementById("p3").style.color = "red";
-  document.getElementById("andrea").src="../img/3x.png";
+  document.getElementById("andrea").src = "../img/3x.png";
   document.getElementById("p4").style.color = "red";
-  document.getElementById("ferney").src="../img/4x.png";
+  document.getElementById("ferney").src = "../img/4x.png";
   document.getElementById("p5").style.color = "red";
-  document.getElementById("catalina").src="../img/5x.png";
+  document.getElementById("catalina").src = "../img/5x.png";
   document.getElementById("p6").style.color = "red";
-  document.getElementById("yurani").src="../img/6x.png";
+  document.getElementById("yurani").src = "../img/6x.png";
   document.getElementById("p11").style.color = "red";
-  document.getElementById("camilo").src="../img/11x.png"
+  document.getElementById("camilo").src = "../img/11x.png"
 }
 
 function tieneSombrero() {
   document.getElementById("p4").style.color = "red";
-  document.getElementById("ferney").src="../img/4x.png";
+  document.getElementById("ferney").src = "../img/4x.png";
   document.getElementById("p5").style.color = "red";
-  document.getElementById("catalina").src="../img/5x.png";
+  document.getElementById("catalina").src = "../img/5x.png";
   document.getElementById("p7").style.color = "red";
-  document.getElementById("marinella").src="../img/7x.png"
+  document.getElementById("marinella").src = "../img/7x.png"
   document.getElementById("p10").style.color = "red";
-  document.getElementById("fernanda").src="../img/10x.png"
+  document.getElementById("fernanda").src = "../img/10x.png"
   document.getElementById("p11").style.color = "red";
-  document.getElementById("camilo").src="../img/11x.png"
+  document.getElementById("camilo").src = "../img/11x.png"
   document.getElementById("p12").style.color = "red";
-  document.getElementById("werner").src="../img/12x.png"
+  document.getElementById("werner").src = "../img/12x.png"
 }
 
 function noTieneSombrero() {
   document.getElementById("p1").style.color = "red";
-  document.getElementById("carlos").src="../img/1x.png"
+  document.getElementById("carlos").src = "../img/1x.png"
   document.getElementById("p2").style.color = "red";
-  document.getElementById("yisel").src="../img/2x.png"
+  document.getElementById("yisel").src = "../img/2x.png"
   document.getElementById("p3").style.color = "red";
-  document.getElementById("andrea").src="../img/3x.png";
+  document.getElementById("andrea").src = "../img/3x.png";
   document.getElementById("p6").style.color = "red";
-  document.getElementById("yurani").src="../img/6x.png";
+  document.getElementById("yurani").src = "../img/6x.png";
   document.getElementById("p8").style.color = "red";
-  document.getElementById("alejandra").src="../img/8x.png"
+  document.getElementById("alejandra").src = "../img/8x.png"
   document.getElementById("p9").style.color = "red";
-  document.getElementById("daniel").src="../img/9x.png"
+  document.getElementById("daniel").src = "../img/9x.png"
 }
 
 function orejasConejo() {
   document.getElementById("p1").style.color = "red";
-  document.getElementById("carlos").src="../img/1x.png"
+  document.getElementById("carlos").src = "../img/1x.png"
   document.getElementById("p2").style.color = "red";
-  document.getElementById("yisel").src="../img/2x.png"
+  document.getElementById("yisel").src = "../img/2x.png"
   document.getElementById("p4").style.color = "red";
-  document.getElementById("ferney").src="../img/4x.png";
+  document.getElementById("ferney").src = "../img/4x.png";
   document.getElementById("p6").style.color = "red";
-  document.getElementById("yurani").src="../img/6x.png";
+  document.getElementById("yurani").src = "../img/6x.png";
   document.getElementById("p9").style.color = "red";
-  document.getElementById("daniel").src="../img/9x.png"
+  document.getElementById("daniel").src = "../img/9x.png"
   document.getElementById("p10").style.color = "red";
-  document.getElementById("fernanda").src="../img/10x.png"
+  document.getElementById("fernanda").src = "../img/10x.png"
   document.getElementById("p11").style.color = "red";
-  document.getElementById("camilo").src="../img/11x.png"
+  document.getElementById("camilo").src = "../img/11x.png"
   document.getElementById("p12").style.color = "red";
-  document.getElementById("werner").src="../img/12x.png"
+  document.getElementById("werner").src = "../img/12x.png"
 }
 
 function noOrejasConejo() {
   document.getElementById("p3").style.color = "red";
-  document.getElementById("andrea").src="../img/3x.png";
+  document.getElementById("andrea").src = "../img/3x.png";
   document.getElementById("p5").style.color = "red";
-  document.getElementById("catalina").src="../img/5x.png";
+  document.getElementById("catalina").src = "../img/5x.png";
   document.getElementById("p7").style.color = "red";
-  document.getElementById("marinella").src="../img/7x.png"
+  document.getElementById("marinella").src = "../img/7x.png"
   document.getElementById("p8").style.color = "red";
-  document.getElementById("alejandra").src="../img/8x.png"
+  document.getElementById("alejandra").src = "../img/8x.png"
   document.getElementById("p9").style.color = "red";
-  document.getElementById("daniel").src="../img/9x.png"
+  document.getElementById("daniel").src = "../img/9x.png"
 }
 
 function tieneBigote() {
   document.getElementById("p2").style.color = "red";
   document.getElementById("p3").style.color = "red";
-  document.getElementById("andrea").src="../img/3x.png";
+  document.getElementById("andrea").src = "../img/3x.png";
   document.getElementById("p5").style.color = "red";
-  document.getElementById("catalina").src="../img/5x.png";
+  document.getElementById("catalina").src = "../img/5x.png";
   document.getElementById("p6").style.color = "red";
   document.getElementById("p7").style.color = "red";
-  document.getElementById("marinella").src="../img/7x.png"
+  document.getElementById("marinella").src = "../img/7x.png"
   document.getElementById("p8").style.color = "red";
-  document.getElementById("alejandra").src="../img/8x.png"
+  document.getElementById("alejandra").src = "../img/8x.png"
   document.getElementById("p9").style.color = "red";
-  document.getElementById("daniel").src="../img/9x.png"
+  document.getElementById("daniel").src = "../img/9x.png"
   document.getElementById("p10").style.color = "red";
-  document.getElementById("fernanda").src="../img/10x.png"
+  document.getElementById("fernanda").src = "../img/10x.png"
   document.getElementById("p12").style.color = "red";
-  document.getElementById("werner").src="../img/12x.png"
+  document.getElementById("werner").src = "../img/12x.png"
 }
 
 function noTieneBigote() {
   document.getElementById("p1").style.color = "red";
-  document.getElementById("carlos").src="../img/1x.png"
+  document.getElementById("carlos").src = "../img/1x.png"
   document.getElementById("p4").style.color = "red";
-  document.getElementById("ferney").src="../img/4x.png"
+  document.getElementById("ferney").src = "../img/4x.png"
   document.getElementById("p11").style.color = "red";
-  document.getElementById("camilo").src="../img/11x.png"
+  document.getElementById("camilo").src = "../img/11x.png"
 }
 
 function ojosGrades() {}
@@ -191,6 +191,7 @@ window.onload = function () {
   // var n = 60;
   var n = 90;
   setTimeout(countDown, 1000);
+
   function countDown() {
     n--;
     if (n > 0) {
@@ -421,8 +422,8 @@ function preguntar() {
       break;
     case "tieneBigote":
       if (
-        randomPregunta === 1 || 
-        randomPregunta === 4 || 
+        randomPregunta === 1 ||
+        randomPregunta === 4 ||
         randomPregunta === 11
       ) {
         tieneBigote();
