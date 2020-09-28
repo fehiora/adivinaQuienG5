@@ -1,34 +1,3 @@
-function puntaje() {
-  const punto = 10;
-  arrayMemoria.push(punto);
-  const sumatoria =
-    parseInt(arrayMemoria2[arrayMemoria2.length - 1]) +
-    parseInt(arrayMemoria[arrayMemoria.length - 1]);
-  arrayMemoria2.push(sumatoria);
-  document.getElementById("puntaje").innerHTML =
-  arrayMemoria2[arrayMemoria2.length - 1];
-}
-
-
-function puntajeGanador() {
-  const punto = 100;
-  arrayMemoria.push(punto);
-  const sumatoria =
-    parseInt(arrayMemoria2[arrayMemoria2.length - 1]) +
-    parseInt(arrayMemoria[arrayMemoria.length - 1]);
-  arrayMemoria2.push(sumatoria);
-  document.getElementById("puntaje").innerHTML =
-  arrayMemoria2[arrayMemoria2.length - 1];
-}
-
-
-
-
-
-
-
-
-
 const bienvenidaUsuario = document.getElementById('bienvenida_usuario')
 if (localStorage.getItem('sesion')) {
   const bienvenidaStorage = JSON.parse(localStorage.getItem('sesion'))
@@ -237,7 +206,6 @@ window.onload = function () {
 
   document.getElementById("p1").onclick = function () {
     personaje1();
-    
   };
   document.getElementById("p2").onclick = function () {
     personaje2();
@@ -284,7 +252,6 @@ window.onload = function () {
   function personaje1() {
     if (personajeRandom == 1) {
       document.getElementById("p1").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -292,7 +259,6 @@ window.onload = function () {
   function personaje2() {
     if (personajeRandom == 2) {
       document.getElementById("p2").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -300,7 +266,6 @@ window.onload = function () {
   function personaje3() {
     if (personajeRandom == 3) {
       document.getElementById("p3").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -308,7 +273,6 @@ window.onload = function () {
   function personaje4() {
     if (personajeRandom == 4) {
       document.getElementById("p4").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -316,7 +280,6 @@ window.onload = function () {
   function personaje5() {
     if (personajeRandom == 5) {
       document.getElementById("p5").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -324,7 +287,6 @@ window.onload = function () {
   function personaje6() {
     if (personajeRandom == 6) {
       document.getElementById("p6").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -332,7 +294,6 @@ window.onload = function () {
   function personaje7() {
     if (personajeRandom == 7) {
       document.getElementById("p7").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -340,7 +301,6 @@ window.onload = function () {
   function personaje8() {
     if (personajeRandom == 8) {
       document.getElementById("p8").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -348,7 +308,6 @@ window.onload = function () {
   function personaje9() {
     if (personajeRandom == 9) {
       document.getElementById("p9").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -356,7 +315,6 @@ window.onload = function () {
   function personaje10() {
     if (personajeRandom == 10) {
       document.getElementById("p10").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -364,7 +322,6 @@ window.onload = function () {
   function personaje11() {
     if (personajeRandom == 11) {
       document.getElementById("p11").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -372,7 +329,6 @@ window.onload = function () {
   function personaje12() {
     if (personajeRandom == 12) {
       document.getElementById("p12").innerHTML = "Ganaste!";
-      puntajeGanador()
     }
     console.log(personajeRandom);
   }
@@ -408,18 +364,16 @@ function preguntar() {
         randomPregunta === 10
       ) {
         esMujer();
-        puntaje()
       } else {
         esHombre();
-        puntaje()
-   /*      const punto = 10;
+        const punto = 10;
         arrayMemoria.push(punto);
         const sumatoria =
           parseInt(arrayMemoria2[arrayMemoria2.length - 1]) +
           parseInt(arrayMemoria[arrayMemoria.length - 1]);
         arrayMemoria2.push(sumatoria);
         console.log(arrayMemoria);
-        console.log(arrayMemoria2); */
+        console.log(arrayMemoria2);
       }
       break;
     case "tieneGafas":
@@ -432,7 +386,6 @@ function preguntar() {
         randomPregunta === 11
       ) {
         tieneGafas();
-        puntaje()
       } else {
         notieneGafas();
         puntaje();
@@ -448,7 +401,6 @@ function preguntar() {
         randomPregunta === 9
       ) {
         tieneSombrero();
-        puntaje()
         console.log("En IF es tieneSombrero", randomPregunta);
       } else {
         noTieneSombrero();
@@ -463,7 +415,6 @@ function preguntar() {
         randomPregunta === 8
       ) {
         orejasConejo();
-        puntaje()
       } else {
         noOrejasConejo();
         puntaje();
@@ -476,7 +427,6 @@ function preguntar() {
         randomPregunta === 11
       ) {
         tieneBigote();
-        puntaje()
         console.log("En IF es orejasConejo", randomPregunta);
       } else {
         noTieneBigote();
