@@ -5,26 +5,54 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    background-color: #114B5F !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
-    height: 80px;
+    height: 110px;
     background-color: #7E1F86;
     border-bottom: solid #114B5F;
-    color: white;
+    color: #E4FDE1;
     text-align: center;
 }
 
-.contenedor {
-    margin-top: 1%;
-    padding: 1% 2%;
+.main{
+    padding: 0 4%;
+    background-color: #038080;
+    box-shadow: 0 0 150px #7E1F86;
 }
 
-.aside {
-    background-color: #F45B69;
+.instrucciones{
+    background-color: #7E1F86;
     color: white;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+
+.instrucciones > h4{
+    margin-bottom: 50%;
+}
+
+.selector{
+    padding-top: 10%;
+    background-color:#7E1F86;
+    color: #E4FDE1 ;
+}
+
+.btnSelector{
+    margin-top: 20%;
+    padding: 3%;
+    border-radius: 20px;
+    background-color:#114B5F;
+    color: white
+}
+
+.btnSelector:hover{
+    margin-top: 20%;
+    padding: 3%;
+    border-radius: 20px;
+    background-color:white;
+    color:#114B5F
 }
 
 .btnAside {
@@ -83,5 +111,13 @@ body {
 .tg .tg-amwm {
     font-weight: bold;
     text-align: center;
-    vertical-align: top
+    vertical-align: top;
+}
+
+.salida {
+    height: 80px;
+    background-color: #7E1F86;
+    border-bottom: solid #114B5F;
+    color: white;
+    text-align: center;
 }

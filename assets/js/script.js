@@ -1,3 +1,17 @@
+const bienvenidaUsuario = document.getElementById('bienvenida_usuario')
+if (localStorage.getItem('sesion')){
+    const bienvenidaStorage = JSON.parse(localStorage.getItem('sesion'))
+    bienvenidaUsuario.innerText = ('  ' + bienvenidaStorage.nombre)
+}else{
+    setTimeout(() =>{
+        window.location = '../pages/login.html'
+    },300)
+}
+
+
+
+
+
 function esHombre() {
   document.getElementById("p2").style.color = "red" ;
   document.getElementById("yisel").src="../img/2x.png";
@@ -175,7 +189,7 @@ window.onload = function () {
 
   // Cuenta Regresiva
   // var n = 60;
-  var n = 60000;
+  var n = 90;
   setTimeout(countDown, 1000);
   function countDown() {
     n--;
