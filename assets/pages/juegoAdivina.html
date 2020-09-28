@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina_Juego</title>
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/juegoStyle.css">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header class="header mb-2 p-2 d-flex justify-content-around">
+        <h2>ADIVINA QUINE!!! CON BICTIA</h2>
+        <p class="align-self-center">Bienvenid@:</p>
+        <p id="bienvenida_usuario"></p>
+    </header>
+
+    <main class="bg-light ">
+    <div class="row">
+        <div class="col bg-info d-flex justify-content-around a">
+            <p>Tienes <strong><span id="time"></span> </strong>Segundos</p>
+            <small>*El personaje a adivinar es Random<strong>
+                        <span id="random"> </span></strong></small>
+            <p>Puntaje: <strong><span id="puntaje"> </span></strong></p>
+            <input type="reset" id="resetear" value="REINICIAR" />
+        </div>
+    </div> 
+
+        <div class="row">
+            <div class="col-3 bg-warning">
+                <p>INSTRUCCIONES</p>
+                <p>Para adivinar el personaje:</p>
+                <p>1. Elije una de las características y da click en PREGUNTA</p>
+                <p>2.Si el personaje no tiene la caractarística verás un color rojo</p>
+                <p>3. Si crees saber le respuesta, selecciona el personaje</p>
+            </div>
+
+            <div class="col-6">
+                <table class="tg table-info">
+                    <thead>
+                        <tr>
+                            <th class="tg-amwm"><img id="carlos" src="../img/1.png" class="">
+                                <p id="p1">Carlos</p>
+                            </th>
+                            <th class="tg-amwm"><img id="yisel" src="../img/2.png" class="">
+                                <Mujer id="p2"><br>Yisel</br></p>
+                            </th>
+                            <th class="tg-amwm"><img id="andrea" src="../img/3.png" class="">
+                                <Mujer id="p3"><br>Andrea</br></p>
+                            </th>
+                            <th class="tg-amwm"><img id="ferney" src="../img/4.png" class="">
+                                <p id="p4">Ferney</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-amwm"><img id="catalina" src="../img/5.png" class="">
+                                <p id="p5">Catalina</p>
+                            </td>
+                            <td class="tg-amwm"><img id="yurani" src="../img/6.png" class="">
+                                <p id="p6">Yurani</p>
+                            </td>
+                            <td class="tg-amwm"><img id="marinella" src="../img/7.png" class="">
+                                <p id="p7">Marinella</p>
+                            </td>
+                            <td class="tg-amwm"><img id="alejandra" src="../img/8.png" class="">
+                                <p id="p8">Alejandra</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-amwm"><img id="daniel" src="../img/9.png" class="">
+                                <p id="p9">Daniel</p>
+                            </td>
+                            <td class="tg-amwm"><img id="fernanda" src="../img/10.png" class="">
+                                <p id="p10">M° Fernanda</p>
+                            </td>
+                            <td class="tg-amwm"><img id="camilo" src="../img/11.png" class="">
+                                <p id="p11">Camilo</p>
+                            </td>
+                            <td class="tg-amwm"><img id="werner" src="../img/12.png" class="">
+                                <p id="p12"> Werner</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            
+            <div class="col-3 d-flex justify-content-center">
+                <form action="#" name="formulario" onreset="document.fgColor='black'">
+                    <input type="radio" name="color" value="esHombre" /> Es Hombre?<br />
+                    <input type="radio" name="color" value="tieneGafas" /> Tiene Gafas?<br />
+                    <input type="radio" name="color" value="tieneSombrero" /> Tiene Sombrero?<br />
+                    <input type="radio" name="color" value="orejasConejo" /> Tiene Orejas de Conejo?<br />
+                    <input type="radio" name="color" value="tieneBigote" /> Tiene Bigote<br />
+                    <input type="radio" name="color" value="ojosGrades" /> Tiene Ojos Grandes <br />
+                    <input type="radio" name="color" value="esJoven" /> Es Joven<br /><br />
+                    <input type="button" onclick="preguntar()" value="PREGUNTAR" /><br /><br />
+                </form>
+            </div>
+            
+
+
+    </main>
+
+    <div class="d-flex justify-content-around">
+        <button type="button" class="btnAside"><a href="../pages/perfiles.html"></a> Conócenos</button>
+        <button type="button" class="btnAside"><a href="../../index.html">Salir</a></button>
+    </div>
+
+
+
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+
+</html>

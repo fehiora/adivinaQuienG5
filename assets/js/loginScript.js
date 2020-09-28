@@ -25,7 +25,7 @@ traerFormulario.addEventListener('submit', (e)=>{
                 // añadir aqui una función que redirija a pagina de usuario
                 localStorage.setItem('sesion', JSON.stringify(arrayValidarUsuario[i]))
                 setTimeout(() =>{
-                    window.location = '../pages/juego.html'
+                    window.location = '../pages/juegoAdivina.html'
                 },1000)
                 return true
             }
