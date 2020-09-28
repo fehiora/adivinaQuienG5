@@ -18,9 +18,10 @@
 <body>
 
     <header class="header mb-1 p-2 d-flex justify-content-around">
-        <h2>ADIVINA QUINE!!! CON BICTIA</h2>
-        <p class="align-self-center">Bienvenid@:<smal id="bienvenida_usuario"></smal></p>
-        
+        <h2>ADIVINA QUIÉN!!! CON BICTIA</h2>
+        <p class="align-self-center">Bienvenid@:<smal id="bienvenida_usuario"></smal>
+        </p>
+
         <div class="row">
             <div class="col p-1">
                 <p>Tienes <strong><span id="time"></span> </strong>Segundos</p>
@@ -30,7 +31,7 @@
     </header>
 
     <main class="main">
-        
+
 
         <div class="row p-2">
             <div class="col instrucciones">
@@ -38,7 +39,7 @@
                 <p>Para adivinar el personaje:</p>
                 <p>1. Elije una de las características y da click en PREGUNTA</p>
                 <p>2. Si el personaje no tiene la caractarística verás un color rojo</p>
-                <p>3. Si crees saber le respuesta, selecciona el personaje</p>
+                <p>3. Si crees saber le respuesta, has click sobre el nombre del personaje</p>
             </div>
 
             <div class="col d-flex justify-content-center">
@@ -54,7 +55,7 @@
                             <th class="tg-amwm"><img id="andrea" src="../img/3.png" class="">
                                 <Mujer id="p3"><br>Andrea</br></p>
                             </th>
-                            <th class="tg-amwm"><img id="ferney" src="../img/4.png" class="">
+                            <th class="tg-amwm"><img id="ferney" src="../img/4.jpeg" class="">
                                 <p id="p4">Ferney</p>
                             </th>
                         </tr>
@@ -75,7 +76,7 @@
                             </td>
 
 
-                            
+
                         </tr>
                         <tr>
                             <td class="tg-amwm"><img id="daniel" src="../img/9.png" class="">
@@ -107,7 +108,8 @@
                         <label class="custom-control-label" for="gafas">¿Tiene Gafas?</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="sombrero" name="color" value="tieneSombrero" class="custom-control-input">
+                        <input type="radio" id="sombrero" name="color" value="tieneSombrero"
+                            class="custom-control-input">
                         <label class="custom-control-label" for="sombrero">¿Tiene Sombrero?</label>
                     </div>
                     <div class="custom-control custom-radio">
@@ -118,27 +120,29 @@
                         <input type="radio" id="bigote" name="color" value="tieneBigote" class="custom-control-input">
                         <label class="custom-control-label" for="bigote">¿Tiene Bigote?</label>
                     </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="ojosGrades" name="color" value="ojosGrades" class="custom-control-input">
+                    <!--  <div class="custom-control custom-radio">
+                        <input type="radio" id="ojosGrades" name="color" value="ojosGrades"
+                            class="custom-control-input">
                         <label class="custom-control-label" for="ojosGrades">¿Tiene Ojos Grandes?</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="joven" name="color" value="esJoven" class="custom-control-input bg-info">
+                        <input type="radio" id="joven" name="color" value="esJoven"
+                            class="custom-control-input bg-info">
                         <label class="custom-control-label" for="joven">¿Es Joven?</label>
-                    </div>
+                    </div> -->
                     <button class="btnSelector" type="button" onclick="preguntar()">PREGUNTAR</button>
                     <button class="btnSelector" type="reset" id="resetear">REINICIAR</button>
 
                 </form>
-                
+
             </div>
 
     </main>
 
     <div class="salida d-flex justify-content-around p-2">
-        <button type="button" class="btnAside"><a href="../pages/perfiles.html">Conócenos</a></button>
-        <small>*El personaje a adivinar es: <strong><span id="random"> </span></strong></small>
-        <button type="button" class="btnAside"><a href="../../index.html">Salir</a></button>
+        <button class="btnAside"><a href="../pages/perfiles.html">Conócenos</a></button>
+        <small class="d-none"><strong><span id="random"> </span></strong></small>
+        <button class="btnAside1"><a href="../../index.html">Salir</a></button>
     </div>
 
 
